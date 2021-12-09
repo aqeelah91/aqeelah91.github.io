@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+
+    <h1>Factorial</h1>
+
+    <input type="text" id="number">
+    <button type="button" onclick="calculate()">Factorial Calculator</button>
+    <p id="demo"></p>
+
+    <script>
+
+        function calculate(){
+        let number = document.getElementById("number").value;
+        let answer=1;
+        
+        for(let i=1;i<=number;i++){
+            answer *= i
+        }
+        document.getElementById("demo").innerHTML = "Factorial "+answer;
+
+
+        
+        }
+    </script>
+
+    
+    
+</body>
+</html>

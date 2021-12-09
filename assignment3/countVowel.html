@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Vowels</title>
+</head>
+<body>
+
+    <h1>Count Vowels</h1>
+
+    <input type="text" id="count">
+    <button onclick="calculate()">Vowels Counter</button>
+    <p id="answer"></p>
+
+    <script>
+
+        function calculate(){
+        let count= document.getElementById("count").value;
+        let equal = 0;
+
+        for(let i=0;i<count.length;i++){
+
+            if(count[i]== "a" || count[i]== "e" || count[i]== "i" || count[i]== "o" || count[i]== "u")
+            {
+                equal++
+            }
+
+        }
+
+
+        document.getElementById("answer").innerHTML = equal+" vowels";
+    }
+
+    </script>
+
+    
+    
+</body>
+</html>

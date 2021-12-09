@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<body>
+    <h1>Palindrome Checker</h1>
+    <input type="text" id="palindrome">
+    <button onclick="check()">Palindome checker</button>
+    <p id="answer"></p>
+    <p id="i"></p>
+    <p id="l"></p>
+
+    <script>
+    function check() {
+
+        // find the length of a string
+        let input = document.getElementById("palindrome").value;
+        let length = input.length;
+
+        for (let i = 0; i < length/2; i++) {
+    
+            if (input[i] !== input[length - i]) {
+                document.getElementById("answer").innerHTML = "not a palindrome";
+            }
+        }
+        document.getElementById("answer").innerHTML = "a palindrome";
+    }
+    </script>
+    
+</body>
+</html>
