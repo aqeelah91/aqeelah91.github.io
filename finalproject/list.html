@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Booking App - Listing Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- NavBar -->
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="index.html">Table Booking App</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="booking.html">Book Table</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="list.html">View Bookings</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Jumbotron -->
+        <div class="row">
+            <div class="col">
+                <div class="jumbotron">
+                    <h1 class="display-4">Here is our booking list!</h1>
+                    <p class="lead">Call them to confirm</p>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Booking List -->
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-warning" id="refreshNowBtn">Refresh Now</button>
+                <table class="table" id="bookingNameList">
+                    <thead>
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Pax</th>
+                        <th scope="col">Remarks</th>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="tableapp/JS/list.js"></script>
+    <script src= "tableapp/JS/booking-delete.js"></script> 
+<!-- 
+    <table id="myTable">
+		<tr>
+		  <td>Row 1</td>
+		  <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+		</tr>
+		<tr>
+		  <td>Row 2</td>
+		  <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+		</tr>
+		<tr>
+		  <td>Row 3</td>
+		  <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+		</tr>
+	  </table>
+	  
+	  <script>
+	  function deleteRow(r) {
+		var i = r.parentNode.parentNode.rowIndex;
+		document.getElementById("myTable").deleteRow(i);
+	  }
+	  </script> -->
+</body>
+
+</html>
